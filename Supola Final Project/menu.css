@@ -1,0 +1,214 @@
+* {
+    box-sizing: border-box;
+}
+.grid {
+    display: grid;
+}
+.wrapper { 
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    background-color: rgb(247, 238, 228);
+    grid-auto-rows: 100px; 
+    grid-column-start: 1; 
+    grid-column-end: 5; 
+    grid-row-start: 1; 
+    grid-row-end: 20;
+}
+.back {
+    text-decoration: none;
+    color: black;
+    font-size: 4vh;
+    grid-column-start: 1; 
+    grid-column-end: 5; 
+    grid-row-start: 1; 
+    grid-row-end: 2;
+    margin-top: 2vh;
+    margin-left: 3vh;
+    padding-right: 20vh;
+    margin-right: 160vh;
+    margin-bottom:0;
+}
+.back:hover {
+    color: rgba(45, 211, 240, 0.3);
+}
+.sand_title a{
+    align-content: center;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-size: 15vh;
+    text-shadow: .25vh .25vh  rgba(45, 211, 240, 0.3);
+    margin-left: 15vh;
+    text-align: center;
+    color: #090909;
+    font-size: 6vh;
+    font-size: 6vh;
+    text-decoration: underline;
+    grid-column-start: 1; 
+    grid-column-end: 2; 
+    grid-row-start: 2; 
+    grid-row-end: 3;
+}
+.sandwiches {
+    color:#090909;
+    border: 1vh solid white;
+    text-align: center;
+    margin: 2vh;
+    grid-column-start: 1; 
+    grid-column-end: 2; 
+    grid-row-start: 3; 
+    padding: 2vh;
+    grid-row-end: 7;
+}
+.sandwiches:hover {
+    background-color:  rgba(45, 211, 240, 0.3);
+}
+.salads:hover {
+    background-color:  rgba(45, 211, 240, 0.3);
+}
+.drinks:hover {
+    background-color:  rgba(45, 211, 240, 0.3);
+}
+.salad_title {
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-size: 15vh;
+    text-shadow: .25vh .25vh  rgba(45, 211, 240, 0.3);
+    color: #090909;
+    font-size: 6.5vh;
+    margin-left: 23vh;
+    text-decoration: underline;
+    grid-column-start: 2; 
+    grid-column-end: 3; 
+    grid-row-start: 2; 
+    grid-row-end: 3;
+}
+.salads {
+    color:#090909;
+    border: 1vh solid white;
+    margin: 3vh;
+    grid-column-start: 2; 
+    text-align: center;
+    grid-column-end: 3; 
+    grid-row-start: 3; 
+    padding: 2vh;
+    grid-row-end: 7;
+}
+.drink_title a{
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-size: 15vh;
+    text-shadow: 2px 2px  rgba(45, 211, 240, 0.3);
+    color: #090909;
+    margin-left: 25vh;
+    font-size: 6.5vh;
+    text-decoration: underline;
+    grid-column-start: 3; 
+    grid-column-end: 4; 
+    grid-row-start: 2; 
+    grid-row-end: 3;
+}
+.drinks {
+    color:#090909;
+    background-color: rgb(247, 238, 228);
+    margin: 3vh;
+    border: 1vh solid white;
+    padding: 2vh;
+    text-align: center;
+    grid-column-start: 3; 
+    grid-column-end: 4; 
+    grid-row-start: 3; 
+    grid-row-end: 7;
+}
+.disclaimer {
+    font-size: 2vh;
+    color: black;
+    grid-column-start: 1; 
+    grid-column-end: 5; 
+    grid-row-start: 7; 
+    grid-row-end: 8;
+}
+@media only screen and (max-width: 959px) {
+    .sand_title {
+        grid-column-start: 2; 
+        grid-column-end: 3; 
+        grid-row-start: 2; 
+        grid-row-end: 3;
+    }
+    .sandwiches {
+        grid-column-start: 1; 
+        grid-column-end: 5; 
+        grid-row-start: 3; 
+        grid-row-end: 7;
+    }
+    .salad_title {
+        grid-column-start: 2; 
+        grid-column-end: 5; 
+        grid-row-start: 8; 
+        grid-row-end: 11;
+    }
+    .salads {
+        grid-column-start: 1; 
+        grid-column-end: 5; 
+        grid-row-start: 9; 
+        grid-row-end: 13;
+    }
+    .drink_title {
+        grid-column-start: 2; 
+        grid-column-end: 5; 
+        grid-row-start: 13; 
+        grid-row-end: 14;
+    }
+    .drinks {
+        grid-column-start: 1; 
+        grid-column-end: 5; 
+        grid-row-start: 14; 
+        grid-row-end: 18;
+    }
+    .disclaimer {
+        grid-column-start: 1; 
+        grid-column-end: 5; 
+        grid-row-start: 18; 
+        grid-row-end: 20;
+    }
+}
+@media only screen and (max-width: 479px) {
+    .sand_title {
+        grid-column-start: 1; 
+        grid-column-end: 3; 
+        grid-row-start: 2; 
+        grid-row-end: 3;
+    }
+    .sandwiches {
+        grid-column-start: 1; 
+        grid-column-end: 5; 
+        grid-row-start: 3; 
+        grid-row-end: 7;
+    }
+    .salad_title {
+        grid-column-start: 1; 
+        grid-column-end: 5; 
+        grid-row-start: 8; 
+        grid-row-end: 11;
+    }
+    .salads {
+        grid-column-start: 1; 
+        grid-column-end: 5; 
+        grid-row-start: 9; 
+        grid-row-end: 13;
+    }
+    .drink_title {
+        grid-column-start: 1; 
+        grid-column-end: 5; 
+        grid-row-start: 13; 
+        grid-row-end: 14;
+    }
+    .drinks {
+        grid-column-start: 1; 
+        grid-column-end: 5; 
+        grid-row-start: 14; 
+        grid-row-end: 19;
+    }
+    .disclaimer {
+        grid-column-start: 1; 
+        grid-column-end: 5; 
+        grid-row-start: 19; 
+        grid-row-end: 20;
+    }
+}
